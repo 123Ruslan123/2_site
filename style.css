@@ -1,0 +1,456 @@
+
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif, Montserrat,"Kaushan Script";
+    width: 100%;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+p {
+    margin: 0 0 10px 0;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*header*****************************************************************/
+.header{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.header.fixed{
+    height: auto;
+    position: fixed;
+    background: #f38181;
+}
+
+.header.fixed .header_inner{
+
+    padding: 10px 0;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header_link{
+    display: flex;
+}
+
+.link_inner{
+    font-family: Montserrat;
+    padding: 0 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: opacity 0.1s linear;
+}
+
+.logo_in{
+   padding-left: 20px;
+    justify-content: center;
+}
+
+.link_inner:hover{
+    text-decoration: underline;
+    color: #fce38a;
+}
+/*intro***************************************************************/
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    padding-top: 100px;
+    background: url("images/fon1.png") no-repeat center / cover;
+}
+.intro_inner{
+    font-family: Montserrat;
+    width: 100%;
+    height: auto;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_title{
+    font-family: "Kaushan Script";
+    font-style: oblique;
+    color: white;
+    font-size: 60px;
+    padding: 10px 0;
+}
+
+.intro_subtitle{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 110px;
+    padding: 10px 0 40px;
+}
+
+.intro_btn{
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    border: 2px solid;
+}
+
+.intro_btn:hover{
+    background-color: gold;
+}
+
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.slider_inner{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    border-top: 3px solid;
+    width: 20%;
+}
+
+.slider_b{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.slider_inner:hover{
+    border-color: red;
+    transition: opacity 0.2s linear;
+}
+/*about*****************************************************************/
+
+.about_inner{
+    width: 100%;
+    height: auto;
+    max-width: 970px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.about_h1{
+    font-size: 19px;
+    font-family: "Kaushan Script";
+    padding: 10px 0;
+}
+
+.about_h2{
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.about_h3{
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 0;
+
+}
+
+.about_image{
+    display: flex;
+    width: 33.33333%;
+}
+
+.images_pad{
+    padding: 0 10px 20px;
+}
+
+
+/*number**************************************************************/
+.number{
+    margin: 40px 0;
+    width: 100%;
+    background-color: aqua;
+}
+
+.number_inner{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number_title{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.nu_title{
+    font-size: 50px;
+    font-weight: 900;
+}
+.nu_subtitle{
+    text-transform: uppercase;
+}
+/*work******************************************************************/
+.work{
+    margin: 80px 0;
+    width: 100%;
+}
+
+.work_title{
+    text-align: center;
+}
+
+.w_title{
+    font-family: "Kaushan Script";
+}
+.w_subtitle{
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content_inner{
+    display: flex;
+    width: 33.33333%;
+    padding: 30px 20px;
+}
+.content_img{
+    padding: 15px;
+}
+
+.con_title{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 10px 0;
+}
+
+.con_subtitle{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+/*comment*******************************************************************/
+.comment{
+
+    height: auto;
+    background-color: beige;
+    margin: 60px 0;
+}
+.comment_inner{
+    display: flex;
+}
+
+.comment_img{
+    margin: 40px 40px;
+    display: inline;
+    padding: 20px 25px;
+    border: 3px solid cyan;
+
+}
+.comment_text{
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.text_com{
+    margin: 60px 0 20px;
+    font-style: italic;
+}
+
+.comment_avtor{
+    font-family: "Kaushan Script";
+    font-size: 20px;
+}
+/*team*****************************************************************/
+
+.team{
+    margin: 40px 0;
+}
+
+.team_title{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.t_title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+.t_subtitle{
+    padding: 0 30px 20px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.team_people{
+    display: flex;
+    width: 33.33333%;
+    text-align: center;
+}
+
+.team_inner{
+    padding: 0 20px;
+}
+
+.people_title{
+    padding: 20px 0 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.people_subtitle{
+    font-size: 15px;
+    font-weight: 300;
+}
+/*logo******************************************************************/
+
+.logotip{
+    width: 100%;
+    background-color: beige;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+/*works*******************************************************************/
+
+.works{
+    display: flex;
+}
+
+.works_col{
+    flex: 1 1 0;
+}
+
+.works_item{
+    position: relative;
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+.works_item:hover .works_image{
+    opacity: .1;
+}
+.works_item:hover .works_info{
+    opacity: 1;
+}
+
+
+.works_image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity .2s linear;
+}
+
+.works_info{
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+}
+
+.works_title{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.works_text{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+/*Comment_2*******************************************************/
+.comment_2{
+    margin: 20px 0;
+    padding-right: 20px;
+}
+/*happy peoples*****************************************************/
+.happy{
+    margin: 40px 0;
+    background: url("images/block9/b9_fon.png") no-repeat center / cover;
+}
+
+.happy_text{
+    text-align: center;
+}
+
+.happy_title{
+    font-family: "Kaushan Script";
+    font-size: 20px;
+    padding: 12px 0;
+}
+
+.happy_subtitle{
+    text-transform: uppercase;
+}
+
+.people{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    align-items: center;
+}
+.peoples{
+    display: flex;
+    width: 50%;
+    margin: 60px 0;
+}
+.peoples_text{
+    margin: 0 40px ;
+}
+
+.peoples_title{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.peoples_subtitle{
+    padding: 10px 0;
+    font-family: "Kaushan Script";
+    font-size: 15px;
+}
+
+.text_subtitle{
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+
+
+
